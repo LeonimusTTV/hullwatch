@@ -1,0 +1,52 @@
+name: macos-beta-issues
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  issues: write
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync macos-beta label with the bug report checkbox
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const label = 'macos-beta';
+            const body = context.payload.issue.body || '';
+
+            // Only look at the "### macOS Beta" section of the issue form, so a
+            // "- [x] Yes" elsewhere in the report can't trigger the label.
+            const section = body.split(/^### /m).find((s) => s.startsWith('macOS Beta'));
+            const isBeta = !!section && /^- \[x\] Yes\s*$/im.test(section);
+
+            const issue = {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            };
+            const hasLabel = context.payload.issue.labels.some((l) => l.name === label);
+
+            if (isBeta && !hasLabel) {
+              try {
+                await github.rest.issues.createLabel({
+                  owner: issue.owner,
+                  repo: issue.repo,
+                  name: label,
+                  color: 'f9d0c4',
+                  description: 'Reported on a beta version of macOS',
+                });
+              } catch (error) {
+                if (error.status !== 422) throw error; // 422: label already exists
+              }
+              await github.rest.issues.addLabels({ ...issue, labels: [label] });
+            } else if (!isBeta && hasLabel) {
+              try {
+                await github.rest.issues.removeLabel({ ...issue, name: label });
+              } catch (error) {
+                if (error.status !== 404) throw error;
+              }
+            }

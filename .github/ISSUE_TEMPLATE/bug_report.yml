@@ -1,0 +1,117 @@
+name: Bug report
+description: Report a problem in HullWatch
+labels: [bug]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+        License, purchase and refund questions are handled by email at [contact@leonimust.com](mailto:contact@leonimust.com), not here.
+
+  - type: textarea
+    attributes:
+      label: "Problem"
+      description: "Describe the current behavior. This may include crash logs, screenshots, or videos."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Steps to reproduce"
+      description: "List the steps to reproduce the problem."
+      placeholder: |
+        1. Open the HullWatch panel from the menu bar
+        2. Open Settings… → Docker
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Expected behavior"
+      description: "Describe the behavior you expect."
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: "Affected section"
+      description: "Which part of HullWatch is affected? Pick all that apply."
+      multiple: true
+      options:
+        - Docker
+        - Kubernetes
+        - GitHub
+        - GitLab
+        - Domains & TLS
+        - Cloudflare
+        - Proxmox
+        - Deployments (Vercel / Netlify)
+        - Uptime
+        - Service status
+        - Git repos
+        - Homebrew
+        - Disk
+        - Ports
+        - Links
+        - Quick tools
+        - Menu bar panel / notifications
+        - Settings
+        - License / trial
+        - Updates
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: "HullWatch version"
+      description: |
+        Open HullWatch **Settings → General**. The version is listed under **About**.
+      placeholder: "Hullwatch 1.2.0 (38)"
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: "Mac model"
+      placeholder: "MacBook Air M2"
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: "macOS version"
+      description: "Apple menu → About This Mac"
+      placeholder: "15.6"
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: "macOS Beta"
+      description: "Are you currently on a beta version of macOS?"
+      options:
+        - label: "Yes"
+          required: false
+
+  - type: checkboxes
+    attributes:
+      label: "Agreements"
+      description: "Check the following before submitting the bug report."
+      options:
+        - label: "My title is concise but descriptive and specific."
+          required: true
+        - label: "I am on the latest HullWatch release (Check for Updates…)."
+          required: true
+        - label: "I have searched for [existing bug reports](https://github.com/LeonimusTTV/hullwatch/issues?q=is%3Aissue+label%3Abug)."
+          required: true
+        - label: "I have read the [FAQ](https://hullwatch.dev/faq)."
+          required: true
+        - label: "I have removed any API tokens, hostnames or other private data from my report."
+          required: true
+        - label: "This is not a usage or 'How to' question."
+          required: true
+        - label: "This is not an \"I didn't receive my license\" or an \"I want a refund\" issue."
+          required: true

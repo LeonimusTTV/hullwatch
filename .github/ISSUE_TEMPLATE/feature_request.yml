@@ -1,0 +1,44 @@
+name: Feature request
+description: Request an enhancement or a new integration for HullWatch
+labels: [enhancement]
+body:
+
+  - type: textarea
+    attributes:
+      label: "Problem"
+      description: "Describe the problem to be solved."
+      placeholder: "I deploy to Fly.io and can't see failed releases from the menu bar..."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Expected behavior"
+      description: "Describe what the new feature or behavior would look like. How does it solve the problem?"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Additional context"
+      description: "Links to the service's API docs, mockups, screenshots, or anything else that helps."
+    validations:
+      required: false
+
+  - type: checkboxes
+    attributes:
+      label: "Agreements"
+      description: "Check the following before submitting the feature request."
+      options:
+        - label: "My title is concise but descriptive and specific."
+          required: true
+        - label: "I am on the latest HullWatch release (Check for Updates…)."
+          required: true
+        - label: "I have searched for [existing feature requests](https://github.com/LeonimusTTV/hullwatch/issues?q=is%3Aissue+label%3Aenhancement)."
+          required: true
+        - label: "I have read the [FAQ](https://hullwatch.dev/faq)."
+          required: true
+        - label: "This is not a usage or 'How to' question."
+          required: true
+        - label: "This is not an \"I didn't receive my license\" or an \"I want a refund\" issue."
+          required: true

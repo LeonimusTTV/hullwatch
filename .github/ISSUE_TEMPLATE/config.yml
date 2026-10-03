@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: License, purchase or refund
+    url: mailto:contact@leonimust.com
+    about: Lost license key, device limits, or a refund within 14 days of purchase. Email contact@leonimust.com.
+  - name: FAQ
+    url: https://hullwatch.dev/faq
+    about: Answers about licenses, the 3-day trial, refunds, updates and data collection.
