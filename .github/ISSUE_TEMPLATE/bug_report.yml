@@ -47,6 +47,7 @@ body:
         - Domains & TLS
         - Cloudflare
         - Proxmox
+        - Pterodactyl
         - Deployments (Vercel / Netlify)
         - Uptime
         - Service status
@@ -69,7 +70,7 @@ body:
       label: "HullWatch version"
       description: |
         Open HullWatch **Settings → General**. The version is listed under **About**.
-      placeholder: "Hullwatch 1.2.0 (38)"
+      placeholder: "Hullwatch 1.3.0 (44)"
     validations:
       required: true
 

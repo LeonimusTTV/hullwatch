@@ -5,7 +5,7 @@ All notable changes to HullWatch. The same notes are published at [hullwatch.dev
 ## 1.3.0 (October 5, 2026)
 
 - Added Pterodactyl support
-- Added Proxmox server management with alertes if too much resources are used for a period of time
+- Added Proxmox server management with alerts when CPU or memory usage stays too high for a period of time
 
 ## 1.2.0 (October 1, 2026)
 

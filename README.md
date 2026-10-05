@@ -2,7 +2,7 @@
 <a href="https://hullwatch.dev"><img src=".github/assets/icon.png" width="220" height="220" alt="HullWatch" align="center"/></a>
 
 <h2>HullWatch</h2>
-<p>Repos, containers, clusters, tunnels and servers, watched from your Mac menu bar.<br/>Docker, Kubernetes, GitHub, GitLab, Cloudflare, Proxmox, Vercel, Netlify and more, in one panel.</p>
+<p>Repos, containers, clusters, tunnels and servers, watched from your Mac menu bar.<br/>Docker, Kubernetes, GitHub, GitLab, Cloudflare, Proxmox, Pterodactyl, Vercel, Netlify and more, in one panel.</p>
 <a href="https://hullwatch.dev/HullWatch.dmg"><img src="https://img.shields.io/badge/Download_for_macOS-E8ECF4?style=for-the-badge&logo=apple&logoColor=0A1224&labelColor=E8ECF4&color=E8ECF4" height="44" alt="Download for macOS"/></a><br/>
 <sub>
 <b>macOS 14 Sonoma or later</b> · Apple silicon &amp; Intel · 3-day free trial included<br/>
@@ -44,7 +44,7 @@ It's a native Mac utility, not a hosted dashboard or SaaS. There is no account t
 
 ## Key Features
 
-Sixteen instruments, one panel. Turn on only the sections you use, reorder them, and set each one's refresh interval in **Settings → Sections**. Every item comes with actions, so you can fix things right from the menu bar.
+Seventeen instruments, one panel. Turn on only the sections you use, reorder them, and set each one's refresh interval in **Settings → Sections**. Every item comes with actions, so you can fix things right from the menu bar.
 
 - **Docker:** Container status and exit codes. Start, stop, restart or remove a container, show its logs, follow them in Terminal, or open a shell inside it.
 - **Kubernetes:** Pods and deployments per context and namespace. Show or follow logs, open a shell, delete a pod, do a rollout restart, **forward a pod's port to localhost**, and switch kubectl's current context.
@@ -52,7 +52,8 @@ Sixteen instruments, one panel. Turn on only the sections you use, reorder them,
 - **GitLab:** Pipelines, merge requests and issues for your GitLab projects, on gitlab.com or your own instance.
 - **Domains & TLS:** Warnings a configurable number of days before a domain registration or TLS certificate expires.
 - **Cloudflare:** Domains with their traffic, and tunnels. **Create a new tunnel**, open a tunnel's public hostname, or delete it.
-- **Proxmox:** Virtual machines and LXC containers on your Proxmox hosts, with start, shutdown and reboot.
+- **Proxmox:** Virtual machines and LXC containers on your Proxmox hosts, with start, shutdown and reboot. Get an alert when a guest's CPU or memory usage stays above a threshold you choose for a period of time.
+- **Pterodactyl:** The game servers on your Pterodactyl panel, with their state and CPU and memory usage. Start, stop, restart or kill a server, open its console, or copy its address.
 - **Deployments:** Vercel and Netlify deployments.
 - **Uptime:** HTTP checks against the URLs you choose, with an on-demand **Check now**.
 - **Service status:** The public status pages of the third-party services you depend on.
