@@ -2,6 +2,11 @@
 
 All notable changes to HullWatch. The same notes are published at [hullwatch.dev/changelog](https://hullwatch.dev/changelog).
 
+## 1.3.0 (October 5, 2026)
+
+- Added Pterodactyl support
+- Added Proxmox server management with alertes if too much resources are used for a period of time
+
 ## 1.2.0 (October 1, 2026)
 
 - Added icons for GitLab and Git
