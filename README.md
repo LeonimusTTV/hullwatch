@@ -15,10 +15,10 @@
 <br/>
 
 <div align="center">
-<a href="https://hullwatch.dev/changelog"><img src="https://img.shields.io/badge/dynamic/xml?url=https%3A%2F%2Fhullwatch.dev%2Freleases%2Fappcast.xml&query=%2F%2Fitem%5B1%5D%2Ftitle&label=version&style=flat&color=blue" alt="Latest version"/></a>
-<a href="https://hullwatch.dev/download"><img src="https://img.shields.io/badge/platform-macOS%2014%2B-lightgrey.svg?style=flat&color=blue" alt="Platform: macOS 14+"/></a>
-<a href="https://github.com/LeonimusTTV/hullwatch/issues?q=is%3Aissue+is%3Aopen+label%3Abug"><img src="https://img.shields.io/github/issues/LeonimusTTV/hullwatch/bug?label=open%20bugs&style=flat&color=blue" alt="Open bug reports"/></a>
-<a href="https://github.com/LeonimusTTV/hullwatch/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement"><img src="https://img.shields.io/github/issues/LeonimusTTV/hullwatch/enhancement?label=feature%20requests&style=flat&color=blue" alt="Open feature requests"/></a>
+<a href="https://hullwatch.dev/changelog"><img src="https://img.shields.io/badge/dynamic/xml?url=https%3A%2F%2Fhullwatch.dev%2Freleases%2Fappcast.xml&query=%2F%2Fitem%5B1%5D%2Ftitle&label=version&style=for-the-badge&logoColor=white&labelColor=282828&color=1d2021" alt="Latest version"/></a>
+<a href="https://hullwatch.dev/download"><img src="https://img.shields.io/badge/platform-macOS%2014%2B-lightgrey.svg?style=for-the-badge&logoColor=white&labelColor=282828&color=1d2021" alt="Platform: macOS 14+"/></a>
+<a href="https://github.com/LeonimusTTV/hullwatch/issues?q=is%3Aissue+is%3Aopen+label%3Abug"><img src="https://img.shields.io/github/issues/LeonimusTTV/hullwatch/bug?label=open%20bugs&style=for-the-badge&logoColor=white&labelColor=282828&color=1d2021" alt="Open bug reports"/></a>
+<a href="https://github.com/LeonimusTTV/hullwatch/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement"><img src="https://img.shields.io/github/issues/LeonimusTTV/hullwatch/enhancement?label=feature%20requests&style=for-the-badge&logoColor=white&labelColor=282828&color=1d2021" alt="Open feature requests"/></a>
 </div>
 
 <hr/>
