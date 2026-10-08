@@ -44,29 +44,34 @@ It's a native Mac utility, not a hosted dashboard or SaaS. There is no account t
 
 ## Key Features
 
-Seventeen instruments, one panel. Turn on only the sections you use, reorder them, and set each one's refresh interval in **Settings → Sections**. Every item comes with actions, so you can fix things right from the menu bar.
+Eighteen instruments, one panel. Turn on only the sections you use, reorder them, and set each one's refresh interval in **Settings → Sections**. Every item comes with actions, so you can fix things right from the menu bar.
 
-- **Docker:** Container status and exit codes. Start, stop, restart or remove a container, show its logs, follow them in Terminal, or open a shell inside it.
-- **Kubernetes:** Pods and deployments per context and namespace. Show or follow logs, open a shell, delete a pod, do a rollout restart, **forward a pod's port to localhost**, and switch kubectl's current context.
-- **GitHub:** GitHub Actions workflow runs, pull requests, issues and review requests for the repositories you pick.
-- **GitLab:** Pipelines, merge requests and issues for your GitLab projects, on gitlab.com or your own instance.
+- **Docker:** Containers grouped by **Compose project**, with status, exit codes, CPU and memory. Start, stop, restart or remove a container, pull and recreate it, show its logs, follow them in Terminal, or open a shell inside it. Start, stop, restart, pull and recreate, or take down a whole project. Works with any Docker context (Docker Desktop, OrbStack, Colima, remote hosts over SSH).
+- **Kubernetes:** Pods, deployments, nodes, jobs, cron jobs and Warning events per context and namespace. Show or follow logs, open a shell, delete a pod, do a rollout restart, **run or suspend a cron job**, **forward a pod's port to localhost**, and switch kubectl's current context. Other contexts can keep alerting in the background.
+- **GitHub:** GitHub Actions workflow runs, pull requests, issues and review requests for the repositories you pick, plus **your own pull requests with their checks**, the latest release and Dependabot alerts. Re-run failed jobs from the menu bar.
+- **GitLab:** Pipelines, merge requests and issues for your GitLab projects, on gitlab.com and any number of self-hosted instances.
 - **Domains & TLS:** Warnings a configurable number of days before a domain registration or TLS certificate expires.
 - **Cloudflare:** Domains with their traffic, and tunnels. **Create a new tunnel**, open a tunnel's public hostname, or delete it.
-- **Proxmox:** Virtual machines and LXC containers on your Proxmox hosts, with start, shutdown and reboot. Get an alert when a guest's CPU or memory usage stays above a threshold you choose for a period of time.
-- **Pterodactyl:** The game servers on your Pterodactyl panel, with their state and CPU and memory usage. Start, stop, restart or kill a server, open its console, or copy its address.
-- **Deployments:** Vercel and Netlify deployments.
-- **Uptime:** HTTP checks against the URLs you choose, with an on-demand **Check now**.
-- **Service status:** The public status pages of the third-party services you depend on.
-- **Git repos:** Ahead/behind counts, uncommitted and untracked changes, and conflicts in your local repositories. Fetch, open in Terminal or your editor, or reveal in Finder. Add a folder and HullWatch finds the repositories inside it.
+- **Proxmox:** Virtual machines, LXC containers, nodes, storage and backups on one or more Proxmox hosts or clusters, with start, shutdown, reboot and **snapshots**. Get an alert when a guest's CPU or memory usage stays above a threshold you choose for a period of time, when storage fills up, or when a backup fails.
+- **Pterodactyl:** The game servers on your Pterodactyl panels, with their state, CPU and memory usage, and backups. Start, stop, restart or kill a server, open its console, or copy its address. Get an alert on high usage or a failed backup.
+- **Deployments:** Vercel, Netlify, Cloudflare Pages, **Cloudflare Workers**, Render and Fly.io, with a **Test connection** button for each provider.
+- **Uptime:** HTTP(S), TCP, ping and DNS checks, with expected status codes, keywords, consecutive failures before alerting, 24-hour uptime and a latency sparkline. **Check now** runs a check on demand.
+- **Service status:** The public status pages of the third-party services you depend on (Atlassian Statuspage, incident.io, Instatus, Better Stack), including upcoming maintenance.
+- **Git repos:** Ahead/behind counts, uncommitted and untracked changes, conflicts and the **CI status** of the current commit in your local repositories. Fetch, pull (fast-forward only), open in Terminal, your editor, GitHub or GitLab, or reveal in Finder. Add a folder and HullWatch finds the repositories inside it.
 - **Homebrew:** Start, stop and restart Homebrew services, and upgrade outdated packages in Terminal.
 - **Disk:** Free space and reclaimable caches. Clean caches, prune unused Docker data, or move files to the Trash.
 - **Ports:** TCP ports your own processes listen on. Quit a process, or **expose a local port with a Cloudflare tunnel**.
 - **Links:** Shortcuts to anything with a URL: `https://`, `vscode://`, `raycast://` and more.
 - **Quick tools:** Decode JWTs, Base64 and URL encode/decode, format or minify JSON, convert timestamps, hash with SHA-256 and generate UUIDs.
+- **Activity:** Ongoing problems and how long they've lasted, recent alerts, and a log of the actions you ran from HullWatch. Export it as CSV or Markdown.
 
-**Keyboard shortcut:** open the panel from anywhere with a global shortcut you set in **Settings → General**.
+**Keyboard shortcut:** open the panel from anywhere with a global shortcut you set in **Settings → General**, and press **⌃⌥⌘K** for the **command palette** to run any action of any item.
 
-**Notifications:** choose which alerts you get in **Settings → Notifications**, and mute the noisy ones from the panel.
+**Notifications:** choose which alerts you get in **Settings → Notifications**. Mute a noisy item for an hour, until tomorrow or for a week, pause everything at once, or set **quiet hours** (silent, off, or a summary when they end).
+
+**Destinations:** send alerts to **ntfy, Discord, Slack, Mattermost, Rocket.Chat, Microsoft Teams, Telegram, Pushover, Gotify** or any JSON webhook, each with its own events, severity and channels.
+
+**Mac integration:** desktop **widgets**, **Shortcuts, Spotlight and Siri** actions, `hullwatch://` links, pinned items, **profiles** (like Work, Home or On call), a detachable panel window, and settings export and import.
 
 **Light on your Mac:** sections refresh less often while the panel is closed and refresh right away when you open it. Refreshing pauses while your Mac sleeps and slows down in Low Power Mode.
 
