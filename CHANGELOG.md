@@ -79,6 +79,8 @@ All notable changes to HullWatch. The same notes are published at [hullwatch.dev
 ### GitLab
 
 - Several instances, gitlab.com and self-hosted. Each project picks its instance, and your current setup moves over automatically
+- Sign in with a GitLab application (OAuth) instead of a personal access token, for instances that delete tokens after a day. No client secret needed, the session renews itself, and you're alerted if it ever needs a new sign-in
+- A pipeline that passed with warnings now shows yellow instead of green, in GitLab and in Git repos
 
 ### Deployments
 
