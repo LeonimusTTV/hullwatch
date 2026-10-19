@@ -2,7 +2,7 @@
 
 All notable changes to HullWatch. The same notes are published at [hullwatch.dev/changelog](https://hullwatch.dev/changelog).
 
-## 1.4.1 (October 19, 2026)
+## 1.4.2 (October 19, 2026)
 
 ### Notifications
 
